@@ -206,6 +206,8 @@ class EventList(mixins.ListModelMixin, mixins.CreateModelMixin, generics.Generic
             return Response({'detail': f"Contract '{contract.id}' already have an event."}, status=status.HTTP_404_NOT_FOUND)
         if contract.id not in contracts_id:
             return Response({'detail': f"Client '{client.email}' don't have the contract ID {contract.id}."}, status=status.HTTP_404_NOT_FOUND)
+        if contract.status == 'unsigned':
+            return Response({'detail': f"Can't create an event on an 'unsigned' contract."}, status=status.HTTP_404_NOT_FOUND)
 
         serializer.is_valid(raise_exception=True)
         serializer.save(client=client, contract=contract)
