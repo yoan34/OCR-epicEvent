@@ -1,11 +1,12 @@
-# epicEvent
+Pour installer et lancer l'application epicEvent:<br>
+1 - cloner le projet<br>
+`git clone https://github.com/yoan34/epicEvent.git`<br>
 
-A Faire:
+2 - Aller dans le projet et créer un environnement de travail virtuel:<br>
+`cd epicEvent/ && python3 -m venv env`<br>
 
-1 - Gérer les filtrer pour les clients, contrats et évémements.
+3 - Activer le bureau virtuel et ajouter les dépendances nécessaires au projet.<br>
+`. env/bin/activate && pip install -r requirements.txt`<br>
 
-2 - re-tester toutes les possibilités avec postman
-
-3 - Factoriser des bouts de code si possible.
-
-4 - 
+4 - Lancer l'application et se rendre sur le site:<br>
+`cd epicevent/ && python manage.py runserver`<br>
