@@ -3,6 +3,7 @@ from api.models import User, Client, Contract, Event
 
 
 class ClientSerializer(serializers.ModelSerializer):
+    sale_contact = serializers.StringRelatedField()
     class Meta:
         model = Client
         fields = ['id', 'firstname', 'lastname', 'email', 'phone', 'mobile',

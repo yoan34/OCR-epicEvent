@@ -29,7 +29,6 @@ class CustomUserCreation(forms.ModelForm):
         return user
 
 
-
 class UserChangeForm(forms.ModelForm):
     password = ReadOnlyPasswordHashField()
 
