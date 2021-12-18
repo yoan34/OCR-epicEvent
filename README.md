@@ -10,8 +10,7 @@ Pour installer et lancer l'application epicEvent:<br>
 `. env/bin/activate && pip install -r requirements.txt`<br>
 
 4 - Lancer l'application et se rendre sur le site:<br>
-<<<<<<< HEAD
-`cd epicevent/ && python manage.py runserver`<br>
+`cd epicevents/ && python manage.py runserver`<br>
 
 # Avec Docker
 
@@ -33,7 +32,3 @@ Connectez-vous à l'URL **localhost:8000/admin**
 ## Prochaine utilisation
 `docker-compose up -d`<br>
 Connectez-vous à l'URL **localhost:8000/admin**
-
-=======
-`cd epicevents/ && python manage.py runserver`<br>
->>>>>>> af9aabad108a8a10a392d46a62f485a785a72312
