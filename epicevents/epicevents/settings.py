@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-huacfei7e(b0r_4-2#b3mjsx611^x8fc)jo^l6u21d6kzbjb$q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': datetime.timedelta(minutes=60),
@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'epicevent',
         'USER': 'yoan',
-        'PASSWORD': '',
-        'HOST': '',
+        'PASSWORD': '753241',
+        'HOST': 'db',
         'PORT': '5432'
     }
 }

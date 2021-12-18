@@ -1,0 +1,25 @@
+version: "3.9"
+   
+services:
+  db:
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: yoan
+      POSTGRES_DB: epicevent
+      POSTGRES_PASSWORD: 753241
+
+  django:
+    image: yoan331/p12_openclassrooms_django
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    working_dir: /app/epicevents
+    command: python manage.py runserver 0.0.0.0:8000
+
+volumes:
+  postgres_data:

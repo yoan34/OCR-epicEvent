@@ -1,3 +1,4 @@
+# En local
 Pour installer et lancer l'application epicEvent:<br>
 1 - cloner le projet<br>
 `git clone https://github.com/yoan34/epicEvent.git`<br>
@@ -10,3 +11,25 @@ Pour installer et lancer l'application epicEvent:<br>
 
 4 - Lancer l'application et se rendre sur le site:<br>
 `cd epicevent/ && python manage.py runserver`<br>
+
+# Avec Docker
+
+## Première utilisation
+Installer les images et lancer les services:<br>
+`docker-compose up -d`<br>
+
+Lancer le service django pour faire les migrations<br>
+`docker-compose run --rm django python manage.py migrate`<br>
+
+Créer un **superuser** avec un **username** et **password**.<br>
+`docker-compose run --rm django python manage.py createsuperuser`<br>
+
+Restart les services pour actualiser<br>
+`docker-compose restart`<br>
+Connectez-vous à l'URL **localhost:8000/admin**
+
+
+## Prochaine utilisation
+`docker-compose up -d`<br>
+Connectez-vous à l'URL **localhost:8000/admin**
+
