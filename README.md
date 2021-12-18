@@ -34,3 +34,6 @@ Connectez-vous à l'URL **localhost:8000/admin**
 Il faut être dans le dossier epicEvent.<br>
 `docker-compose up -d`<br>
 Connectez-vous à l'URL **localhost:8000/admin**
+
+# Documentation API postman
+https://documenter.getpostman.com/view/15117948/UVRAGmMN
