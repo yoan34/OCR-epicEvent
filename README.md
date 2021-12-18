@@ -15,6 +15,7 @@ Pour installer et lancer l'application epicEvent:<br>
 # Avec Docker
 
 ## Première utilisation
+Il faut être dans le dossier epicEvent.<br>
 Installer les images et lancer les services:<br>
 `docker-compose up -d`<br>
 
@@ -30,5 +31,6 @@ Connectez-vous à l'URL **localhost:8000/admin**
 
 
 ## Prochaine utilisation
+Il faut être dans le dossier epicEvent.<br>
 `docker-compose up -d`<br>
 Connectez-vous à l'URL **localhost:8000/admin**
