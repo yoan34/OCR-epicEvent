@@ -9,7 +9,9 @@ Pour installer et lancer l'application epicEvent:<br>
 3 - Activer le bureau virtuel et ajouter les dépendances nécessaires au projet.<br>
 `. env/bin/activate && pip install -r requirements.txt`<br>
 
-4 - Lancer l'application et se rendre sur le site:<br>
+4 - Changer les valeurs du **.env** pour y mettre votre base de donnée, votre clé django.<br>
+
+5 - Lancer l'application et se rendre sur le site:<br>
 `cd epicevents/ && python manage.py runserver`<br>
 
 # Avec Docker
